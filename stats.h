@@ -9,13 +9,14 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stats.h
+ * @brief Function decleration
  *
- * <Add Extended Description Here>
- *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * This file include declarations and documentation for the functions from the
+ * stats.c file
+ * 
+ * @author Quy Lam Hoang
+ * @date 06-09-2017
  *
  */
 #ifndef __STATS_H__
@@ -24,17 +25,79 @@
 /* Add Your Declarations and Function Comments here */ 
 
 /**
- * @brief <Add Brief Description of Function Here>
+ * @brief Given an array of data and a length, print all the statistics
+ * 
+ * @param array The pointer to the input array
+ * @param size The size of the input array
  *
- * <Add Extended Description Here>
- *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- *
- * @return <Add Return Informaiton here>
+ * @return None
  */
+unsigned int print_statistics(unsigned char* array, unsigned int size);
+
+
+/**
+ * @brief Given an array of data and a length, print the array on the screen
+ * 
+ * @param array The pointer to the input array
+ * @param size The size of the input array
+ *
+ * @return None
+ */
+unsigned int print_array(unsigned char* array, unsigned int size);
+
+
+/**
+ * @brief Given an array of data and a length, returns the median value
+ * 
+ * @param array The pointer to the input array
+ * @param size The size of the input array
+ *
+ * @return The median value of the input array
+ */
+unsigned int find_median(unsigned char* array, unsigned int size);
+
+
+/**
+ * @brief Given an array of data and a length, returns the mean value
+ * 
+ * @param array The pointer to the input array
+ * @param size The size of the input array
+ *
+ * @return The mean value of the input array
+ */
+unsigned int find_mean(unsigned char* array, unsigned int size);
+
+
+/**
+ * @brief Given an array of data and a length, returns the maximum
+ * 
+ * @param array The pointer to the input array
+ * @param size The size of the input array
+ *
+ * @return The maximum value of the input array
+ */
+unsigned int find_maximum(unsigned char* array, unsigned int size);
+
+/**
+ * @brief Given an array of data and a length, returns the minimum
+ * 
+ * @param array The pointer to the input array
+ * @param size The size of the input array
+ *
+ * @return The minimum value of the input array
+ */
+unsigned int find_minimum(unsigned char* array, unsigned int size);
+
+/**
+ * @brief Given an array of data and a length, sorts the array from largest
+ * to smallest
+ * 
+ * @param array The pointer to the input array
+ * @param size The size of the input array
+ *
+ * @return The array after sorting
+ */
+unsigned int sort_array(unsigned char* array, unsigned int size);
 
 
 #endif /* __STATS_H__ */

@@ -9,13 +9,13 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stats.c
+ * @brief Function implementation
  *
- * <Add Extended Description Here>
+ * This file implements the functions that analyze the arrays
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author Quy Lam Hoang
+ * @date 06-09-2017
  *
  */
 
@@ -41,3 +41,31 @@ void main() {
 }
 
 /* Add other Implementation File Code Here */
+
+unsigned int print_statistics(unsigned char* array, unsigned int size){
+	
+}
+
+unsigned int print_array(unsigned char* array, unsigned int size){
+
+}
+
+unsigned int find_median(unsigned char* array, unsigned int size){
+
+}
+
+unsigned int find_mean(unsigned char* array, unsigned int size){
+
+}
+
+unsigned int find_maximum(unsigned char* array, unsigned int size){
+
+}
+
+unsigned int find_minimum(unsigned char* array, unsigned int size){
+
+}
+
+unsigned int sort_array(unsigned char* array, unsigned int size){
+
+}
