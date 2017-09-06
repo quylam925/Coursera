@@ -32,7 +32,7 @@
  *
  * @return None
  */
-unsigned int print_statistics(unsigned char* array, unsigned int size);
+void print_statistics(unsigned char* array, unsigned int size);
 
 
 /**
@@ -43,7 +43,7 @@ unsigned int print_statistics(unsigned char* array, unsigned int size);
  *
  * @return None
  */
-unsigned int print_array(unsigned char* array, unsigned int size);
+void print_array(unsigned char* array, unsigned int size);
 
 
 /**
@@ -76,7 +76,7 @@ unsigned int find_mean(unsigned char* array, unsigned int size);
  *
  * @return The maximum value of the input array
  */
-unsigned int find_maximum(unsigned char* array, unsigned int size);
+unsigned char find_maximum(unsigned char* array, unsigned int size);
 
 /**
  * @brief Given an array of data and a length, returns the minimum
@@ -86,7 +86,7 @@ unsigned int find_maximum(unsigned char* array, unsigned int size);
  *
  * @return The minimum value of the input array
  */
-unsigned int find_minimum(unsigned char* array, unsigned int size);
+unsigned char find_minimum(unsigned char* array, unsigned int size);
 
 /**
  * @brief Given an array of data and a length, sorts the array from largest
@@ -97,7 +97,7 @@ unsigned int find_minimum(unsigned char* array, unsigned int size);
  *
  * @return The array after sorting
  */
-unsigned int sort_array(unsigned char* array, unsigned int size);
+void sort_array(unsigned char* array, unsigned int size);
 
 
 #endif /* __STATS_H__ */
