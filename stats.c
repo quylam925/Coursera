@@ -38,13 +38,14 @@ void main() {
 
   /* Other Variable Declarations Go Here */
   /* Statistics and Printing Functions Go Here */
-  printf("Our input array:\n");
+  printf("Print our input array:\n");
   print_array(test,SIZE);
   printf("\n");
   sort_array(test,SIZE);
-  printf("Input array is sorted!\n");
+  printf("Input array is sorted from largest to smallest!\n");
   print_array(test,SIZE);
   printf("\n");
+  printf("Statistics start!\n");
   print_statistics(test, SIZE);
   return;
 }
@@ -52,7 +53,6 @@ void main() {
 /* Add other Implementation File Code Here */
 
 void print_statistics(unsigned char* array, unsigned int size){
-  printf("Statistics start!\n");
   printf("Maximum value: %u\n", find_maximum(array, size));
   printf("Minimum value: %u\n", find_minimum(array, size));
   printf("Mean value: %u\n",find_mean(array, size));
@@ -121,7 +121,7 @@ void sort_array(unsigned char* array, unsigned int size){
   unsigned char tmp = 0;
   for ( i = 0; i < size; i++ ){
       for ( j = i + 1; j < size; j++ ){
-         if ( array[j] < array[i] ){
+         if ( array[j] > array[i] ){
             tmp = array[i];
             array[i] = array[j];
             array[j] = tmp;

@@ -78,6 +78,7 @@ unsigned int find_mean(unsigned char* array, unsigned int size);
  */
 unsigned char find_maximum(unsigned char* array, unsigned int size);
 
+
 /**
  * @brief Given an array of data and a length, returns the minimum
  * 
@@ -87,6 +88,7 @@ unsigned char find_maximum(unsigned char* array, unsigned int size);
  * @return The minimum value of the input array
  */
 unsigned char find_minimum(unsigned char* array, unsigned int size);
+
 
 /**
  * @brief Given an array of data and a length, sorts the array from largest
